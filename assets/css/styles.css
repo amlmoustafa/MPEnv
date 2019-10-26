@@ -718,6 +718,8 @@ i::before, i::after {
     padding-bottom: 0;
     padding-top: 0;
     z-index: 1000;
+    background-color: #75757540;
+    top: 0px !important;
 }
 
 .center-brand {
@@ -2994,14 +2996,14 @@ s
     font-weight: bold;
 }
 
-.fact-iconic h3::after {
-    content: "";
-    height: 3px;
-    width: 50px;
-    background: #ffffff;
-    display: block;
-    margin-top: 15px;
-}
+/*.fact-iconic h3::after {*/
+/*    content: "";*/
+/*    height: 3px;*/
+/*    width: 50px;*/
+/*    background: #ffffff;*/
+/*    display: block;*/
+/*    margin-top: 15px;*/
+/*}*/
 
 .text-center .fact-iconic h3::after,
 .text-center.fact-iconic h3::after {
@@ -4748,10 +4750,6 @@ footer .copyrights > a:focus {
 }
 
 /*++++++++++++++++++++++++++*/
-.about-us {
-    text-transform: uppercase;
-}
-
 .equ-des {
     color: white;
 }
