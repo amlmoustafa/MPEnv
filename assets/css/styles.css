@@ -1133,10 +1133,6 @@ i::before, i::after {
     background: linear-gradient(90deg, #423f9c, #862359);
 }
 
-.transparent-sidemenu .side-menu {
-    background: rgba(0, 0, 0, .95);
-}
-
 .side-menu.side-menu-active,
 .side-menu.before-side {
     -webkit-transform: translate3d(0, 0, 0);
@@ -1580,7 +1576,7 @@ i::before, i::after {
     }
 
     .side-menu {
-        width: 300px;
+        width: 240px;
     }
 
     .side-nav .navbar-nav .nav-item {
