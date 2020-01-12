@@ -1093,7 +1093,7 @@ i::before, i::after {
 
 /*-----Side Menu----*/
 .side-menu {
-    width: 40%;
+    width: 26%;
     position: fixed;
     right: 0;
     top: 0;
@@ -1129,10 +1129,6 @@ i::before, i::after {
     background: -o-linear-gradient(left, #423f9c, #862359);
     background: -webkit-gradient(linear, left top, right top, from(#423f9c), to(#862359));
     background: linear-gradient(90deg, #423f9c, #862359);
-}
-
-.transparent-sidemenu .side-menu {
-    background: rgba(0, 0, 0, .95);
 }
 
 .side-menu.side-menu-active,
@@ -1232,6 +1228,13 @@ i::before, i::after {
     margin-right: 1rem;
     position: absolute;
     right: 15px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    .sidemenu_btn{ display: block !important; }  /* show it on smaller screen */
+}
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+    .sidemenu_btn{ display: none !important; }   /* hide it on larger screens */
 }
 
 .sidemenu_btn.left {
@@ -1578,7 +1581,7 @@ i::before, i::after {
     }
 
     .side-menu {
-        width: 300px;
+        width: 240px;
     }
 
     .side-nav .navbar-nav .nav-item {
