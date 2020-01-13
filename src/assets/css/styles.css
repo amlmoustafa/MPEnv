@@ -40,6 +40,7 @@ body {
     color: #a5a5a5;
     overflow-x: hidden !important;
     overflow-y: auto !important;
+    background-color: #fafbfb !important;
 }
 
 body.full-page {
@@ -1230,11 +1231,17 @@ i::before, i::after {
     right: 15px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 400px) {
-    .sidemenu_btn{ display: block !important; }  /* show it on smaller screen */
+@media (min-width: 0px) and (max-width: 1024px) {
+    .sidemenu_btn{ display: inline !important; }  /* show it on smaller screen */
+    #xenav {     display: none !important; }
 }
-@media screen and (min-width: 401px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .sidemenu_btn{ display: none !important; }   /* hide it on larger screens */
+}
+@media (min-width: 240px) and (max-width: 241px) {
+    .navbar-brand > img { width: 60%; }
+    .tp-rightarrow, .tp-leftarrow { min-width: 20px !important; min-height: 20px !important; }
+    .zeus.tparrows:before { line-height: 40px !important; }
 }
 
 .sidemenu_btn.left {
@@ -1518,7 +1525,6 @@ i::before, i::after {
     .navbar-nav .nav-item {
         margin: 5px 0;
     }
-
     .center-brand .navbar-nav .nav-link,
     .transparent-bg .navbar-nav .nav-link {
         background: #00bcd4;
